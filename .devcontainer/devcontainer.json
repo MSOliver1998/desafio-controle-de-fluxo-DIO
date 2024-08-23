@@ -4,6 +4,7 @@
 	"name": "Java",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
+	"runArgs": ["-v", "${env:HOME}/.ssh:/root/.ssh:ro"],
 
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
