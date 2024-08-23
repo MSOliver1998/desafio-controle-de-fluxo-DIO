@@ -10,6 +10,7 @@ public class Contador{
         terminal.close();
         try {
             contar(parametroUm,parametroDois);
+            System.err.print("vamos contar !");
         } catch (ParametrosInvalidosException e) {
             System.err.println("O segundo parametro deve ser maior que o primeiro");
         }
